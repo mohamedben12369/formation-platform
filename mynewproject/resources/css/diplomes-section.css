@@ -1,0 +1,131 @@
+/* Diplômes Section Styles */
+.diplomes-section {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+    padding: 2rem 2.5rem;
+    margin-top: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.diplomes-title {
+    font-size: 1.7rem;
+    color: #2563eb;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.diplome-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+.diplome-input, .diplome-select {
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 0.4em 1em;
+    font-size: 1em;
+    background: #f3f6fb;
+    color: #2563eb;
+    font-weight: 600;
+    outline: none;
+    min-width: 160px;
+    transition: border 0.2s, background 0.2s;
+    margin-bottom: 0.2em;
+}
+.diplome-input:focus, .diplome-select:focus {
+    border: 2px solid #1d4ed8;
+    background: #fff;
+}
+.diplome-add-btn {
+    background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(37,99,235,0.10);
+}
+.diplome-add-btn:hover {
+    background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
+}
+.diplome-list-wrapper {
+    overflow-x: auto;
+}
+.diplome-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(37,99,235,0.08);
+}
+.diplome-table th, .diplome-table td {
+    border: 1px solid #e5e7eb;
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+.diplome-table th {
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+}
+.diplome-table tr:nth-child(even) {
+    background: #f3f6fb;
+}
+.diplome-delete-btn {
+    background: #fff0f0;
+    color: #dc2626;
+    border: 1px solid #dc2626;
+    border-radius: 6px;
+    padding: 0.2em 1em;
+    font-size: 0.98em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.diplome-delete-btn:hover {
+    background: #dc2626;
+    color: #fff;
+}
+.profile-section {
+    display: none;
+}
+.profile-section[style*='display:block'] {
+    display: block;
+}
+@media (max-width: 700px) {
+    .diplomes-section {
+        padding: 1rem 0.5rem;
+    }
+    .diplome-form {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+
+/* === PAGE-SPECIFIC: Diplômes === */
+body.page-diplomes .diplomes-section,
+body.page-diplomes .diplome-form,
+body.page-diplomes .diplome-table {
+    /* Styles spécifiques à la page Diplômes */
+}
+
+/* === PAGE-SPECIFIC: Profile === */
+body.page-profile .profile-section,
+body.page-profile .profile-info-block {
+    /* Styles spécifiques à la page Profil */
+}
+
+/* === PAGE-SPECIFIC: Dashboard === */
+body.page-dashboard .dashboard-main,
+body.page-dashboard .dashboard-card {
+    /* Styles spécifiques à la page Dashboard */
+}

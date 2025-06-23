@@ -1,0 +1,376 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.x-app-layout, .dashboard-page, .max-w-7xl {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 2.5rem auto;
+}
+
+h1, h2 {
+    font-size: 2.2rem;
+    color: #2563eb;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.bg-white {
+    background: #f8fafc !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 2rem;
+}
+.p-6 {
+    padding: 1.5rem !important;
+    color: #1e293b;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.management-section {
+    background: #f1f5fe;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.07);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+.management-section h2 {
+    color: #2563eb;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.management-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.management-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 320px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s, transform 0.2s;
+    text-align: left;
+}
+.management-card:hover {
+    box-shadow: 0 4px 16px rgba(37,99,235,0.13);
+    transform: translateY(-4px) scale(1.03);
+}
+.management-card h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.management-card p {
+    color: #64748b;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.management-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.management-card a:hover {
+    color: #1d4ed8;
+}
+
+@media (max-width: 900px) {
+    .management-cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .x-app-layout, .dashboard-page, .max-w-7xl {
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    }
+}
+.dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0 2rem 0;
+    background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 4px 16px rgba(37,99,235,0.10);
+    margin-bottom: 2.5rem;
+    position: relative;
+    min-height: 120px;
+}
+.dashboard-title {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 4px 16px rgba(37,99,235,0.18);
+    text-align: center;
+}
+.dashboard-main {
+    padding: 2rem 0 0 0;
+    background: #f3f6fb;
+    min-height: 100vh;
+}
+.dashboard-content-vertical {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.dashboard-tabs-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 220px;
+    margin-top: 1.5rem;
+}
+.dashboard-tab-btn {
+    padding: 1rem 1.5rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-align: left;
+}
+.dashboard-tab-btn.active {
+    background: #fff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+.dashboard-sections-vertical {
+    flex: 1;
+}
+.dashboard-section { animation: fadeIn 0.3s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.management-section {
+    margin-top: 2.5rem;
+    padding: 2rem 0;
+}
+.management-title {
+    font-size: 1.7rem;
+    color: #2563eb;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.management-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.management-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+    padding: 2rem 2.5rem;
+    min-width: 260px;
+    max-width: 340px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.management-card:hover {
+    box-shadow: 0 6px 24px rgba(37,99,235,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+.management-card h3 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+.management-card p {
+    color: #475569;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+}
+.management-link {
+    display: inline-block;
+    padding: 0.6rem 1.3rem;
+    background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(37,99,235,0.10);
+}
+.management-link:hover {
+    background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
+    box-shadow: 0 2px 8px rgba(37,99,235,0.18);
+}
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+.dashboard-table th, .dashboard-table td {
+    border: 1px solid #e5e7eb;
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+.dashboard-table th {
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+}
+.dashboard-table tr:nth-child(even) {
+    background: #f3f6fb;
+}
+.dashboard-table input[readonly] {
+    background: transparent;
+    border: none;
+    color: #1e293b;
+    font-weight: 500;
+}
+.dashboard-table input.editing {
+    background: #fff;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+.dashboard-table button {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+.dashboard-table button:hover {
+    background: #1d4ed8;
+}
+.badge.badge-fk {
+    display: inline-block;
+    background: linear-gradient(90deg, #60a5fa 60%, #2563eb 100%);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin: 0 0.2rem;
+    box-shadow: 0 1px 4px rgba(37,99,235,0.10);
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s;
+}
+.badge.badge-fk:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.18);
+}
+.fk-badge {
+    display: inline-block;
+    padding: 0.25em 0.7em;
+    border-radius: 12px;
+    font-size: 0.98em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 0.2em;
+    box-shadow: 0 1px 4px rgba(37,99,235,0.10);
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+}
+.fk-badge:hover {
+    filter: brightness(0.95);
+}
+.fk-select {
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+    background: #f3f6fb;
+    color: #2563eb;
+    font-weight: 600;
+    outline: none;
+    margin-right: 0.2em;
+    transition: border 0.2s, background 0.2s;
+}
+.fk-select:disabled {
+    background: #e5e7eb;
+    color: #9ca3af;
+    border: 1px solid #c7d2fe;
+}
+/* Tooltip style */
+.fk-badge[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: #fff;
+    padding: 0.4em 0.9em;
+    border-radius: 6px;
+    font-size: 0.95em;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(30,41,59,0.18);
+    opacity: 0.95;
+    pointer-events: none;
+}
+@media (max-width: 900px) {
+    .dashboard-content-vertical {
+        flex-direction: column;
+    }
+    .dashboard-tabs-vertical {
+        flex-direction: row;
+        min-width: unset;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+    .dashboard-tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 700px) {
+    .dashboard-content {
+        padding: 0 0.5rem;
+    }
+    .management-cards {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        padding: 2rem 0 1.5rem 0;
+    }
+}

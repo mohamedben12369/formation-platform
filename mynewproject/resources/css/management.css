@@ -1,0 +1,48 @@
+/* resources/css/management.css */
+
+.management-section {
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+.management-section h2 {
+    color: #2563eb;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.management-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.management-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1 1 300px;
+    min-width: 250px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+.management-card:hover {
+    box-shadow: 0 4px 16px rgba(37,99,235,0.10);
+}
+.management-card h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.management-card p {
+    color: #64748b;
+    font-size: 1rem;
+}
+.management-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: 500;
+}
